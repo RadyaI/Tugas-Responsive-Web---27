@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB</title>
+    <link rel="stylesheet" href="stylePPDB.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="image/telkomtulisanlogo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Profil.html">Profil</a></li>
+                    <li><a href="ppdb.html">PPDB</a></li>
+                    <li><a href="DataSiswa.html">Data Siswa</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu-burger.png" class="menu-icon" onclick="togglemenu()">
+            <img src="image/logotelkom.png" class="logo">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PPDB Online <br>
+                    SMK Telkom Malang</h2>
+                <h4>Untuk calon pendaftar tahun ajaran 2022/2023 bisa mendaftar melalui website ini atau langsung datang ke tempat pendaftaran</h4>
+                <a href="register.html"><button type="button" style="text-decoration:none;">Join Now <img
+                            src="image/arrow-right.png">
+                    </button></a>
+            </div>
+            
+    </div>
+
+    <script>
+
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menulist.style.maxHeight = "0px") {
+                menulist.style.maxHeight = "130px";
+            }
+
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

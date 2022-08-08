@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="image/telkomtulisanlogo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Home</a></li>
+                    <li><a href="Profil.html">Profil</a></li>
+                    <li><a href="ppdb.html">PPDB</a></li>
+                    <li><a href="DataSiswa.html">Data Siswa</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu-burger.png" class="menu-icon" onclick="togglemenu()">
+            <a href="https://smktelkom-mlg.sch.id/" target="_blank"><img src="image/logotelkom.png" class="logo"></a>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>The Real <br>
+                    Informatics School</h2>
+                <p>SMK Telkom Malang adalah pelopor Sekolah menengah kejuruan pertama di Indonesia di bidang Teknologi
+                    dan Informatika. Berpengalaman dari tahun 1992 yang telah terakreditasi "A" dan mempunyai standart
+                    mutu ISO 9001:2015. SMK Telkom Malang juga merupakan sekolah adiwiyata yang menerapkan prinsip
+                    sekolah hijau, hal tersebut semakin memberikan suasana yang nyaman bagi warga sekolah.</p>
+                <a href="ppdb.html"><button type="button" style="text-decoration:none;">Join Now <img
+                            src="image/arrow-right.png">
+                    </button></a>
+            </div>
+            <div class="col-2">
+                <img src="image/computer.png" class="controller">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menulist.style.maxHeight = "0px") {
+                menulist.style.maxHeight = "130px";
+            }
+
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

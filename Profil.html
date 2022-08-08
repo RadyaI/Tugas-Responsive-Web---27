@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="styleProfil.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="image/telkomtulisanlogo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Profil.html">Profil</a></li>
+                    <li><a href="ppdb.html">PPDB</a></li>
+                    <li><a href="DataSiswa.html">Data Siswa</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu-burger.png" class="menu-icon" onclick="togglemenu()">
+            <img src="image/logotelkom.png" class="logo">
+        </div>
+
+        <div class="content">
+          
+            <div class="col-2">
+                <h2>SMK TELKOM MALANG</h2>
+               <p> Kurikulum SMK Telkom Malang telah menerapkan kurikulum 2013 Edisi Revisi. <br> Bidang keahlian yang ada di
+                SMK Telkom Malang adalah Teknologi Informasi & Komunikasi. Program keahlian yang terdapat di SMK Telkom
+                Malang adalah Teknik Komputer & Informatika.</p>    
+
+                <div class="jurusan1">
+                 <a href="TKJ.html"><h4 class="btn">TKJ</h4></a>
+                </div>
+
+                <div class="jurusan2">
+                    <a href="RPL.html"><h4 class="btn">RPL</h4></a>
+                </div>
+            </div>
+            
+                <img src="image/hp_orang-removebg-preview.png" class="foto" >
+            
+        </div>
+
+    </div>
+
+    <script>
+
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menulist.style.maxHeight = "0px") {
+                menulist.style.maxHeight = "130px";
+            }
+
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

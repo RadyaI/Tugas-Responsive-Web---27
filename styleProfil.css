@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', serif;
+    box-sizing: border-box;
+}
+
+
+
+li a {
+    text-align: left;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background: url(image/awan-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+li {
+    margin-left: 5%;
+
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -2.5%;
+    margin-left: -3%;
+
+}
+
+.logo {
+    width: 90px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+nav ul li :hover {
+    color: #ff5ea2;
+}
+
+.content {
+    margin-left: -7%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.foto {
+    position: relative;
+    align-items: right;
+    right: -5%;
+    height: 480px;
+}
+
+.col-2 {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.col-2::after {
+    content: '';
+    width: 10px;
+    height: 70%;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+
+}
+
+div.col-2 {
+    width: 120%;
+    height: 120px;
+}
+
+.jurusan1 {
+    position: relative;
+    margin-top: 11%;
+    margin-left: 6%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.jurusan1 .btn {
+    display: inline-block;
+    background: linear-gradient(-45deg, #8d3a4acb, #e2a3a3);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+
+.jurusan2 {
+    position: relative;
+    margin-left: 60%;
+    margin-top: -7%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.jurusan2 .btn {
+    display: inline-block;
+    background: linear-gradient(-45deg, #8d3a4acb, #e2a3a3);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+
+
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+button img {
+    width: 10px;
+    display: none;
+}
+
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
+.color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to top right, #ff54a2, #ffffff);
+    border-radius: 200px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.sosial-link {
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -3%;
+    margin-left: -8%;
+
+
+}
+
+.sosial-link li a {
+    display: inline;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:700px) {
+
+    nav ul {
+        width: 100%;
+        background: linear-gradient(to top right, #ff54a2, #ffffff);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menulist {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+}

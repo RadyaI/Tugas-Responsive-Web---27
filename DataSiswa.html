@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA SISWA</title>
+    <link rel="stylesheet" href="styleDataSiswa.css">
+</head>
+
+<style>
+    table,
+    th,
+    td,
+    tr {
+
+        border: 1% solid black;
+        padding-bottom: 50px; 
+        padding-right: 50px; 
+
+    }
+
+
+    #warna tr:nth-child(even){
+        background-color: wheat;
+    }
+
+    #warna th{
+        background-color: greenyellow;
+        padding-bottom: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="image/telkomtulisanlogo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Profil.html">Profil</a></li>
+                    <li><a href="ppdb.html">PPDB</a></li>
+                    <li><a href="">Data Siswa</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu-burger.png" class="menu-icon" onclick="togglemenu()">
+            <img src="image/logotelkom.png" class="logo">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <table id="warna">
+                    <tr>
+                        <th>ANGKATAN 30</th>
+                        <th>JUMLAH SISWA</th>
+                        <th colspan="8">KELAS</th>
+                    </tr>
+
+                    <tr>
+                        <td>RPL</td>
+                        <td>1130</td>
+                        <td>RPL 1</td>
+                        <td>RPL 2</td>
+                        <td>RPL 3</td>
+                        <td>RPL 4</td>
+                        <td>RPL 5</td>
+                        <td>RPL 6</td>
+                        <td>RPL 7</td>
+                        <td>RPL 8</td>
+                    </tr>
+
+                    <tr style="background-color:rgb(163, 241, 255) ;">
+                        <td>TKJ</td>
+                        <td>416</td>
+                        <td>TKJ 1</td>
+                        <td>TKJ 2</td>
+                        <td>TKJ 3</td>
+                        <td>TKJ 4</td>
+                        <td>TKJ 5</td>
+                        <td>TKJ 6</td>
+                    </tr>
+
+
+                </table>
+            </div>
+
+        </div>
+
+        <script>
+
+            var menulist = document.getElementById("menulist");
+            menulist.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menulist.style.maxHeight = "0px") {
+                    menulist.style.maxHeight = "130px";
+                }
+
+                else {
+                    menulist.style.maxHeight = "0px";
+                }
+            }
+
+        </script>
+
+</body>
+
+</html>
